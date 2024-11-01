@@ -1,0 +1,59 @@
+.allForm{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.allForm.border{
+    border-radius: 8px;
+    border-style: solid;
+    border-color: rgb(223, 221, 221);   
+    border-width: 1px;    
+}
+
+.allForm.center > label{
+    text-align: center;
+    font-stretch: condensed;
+    font-weight: bold;
+} 
+
+.allForm.center > input[type="file"]{
+    position: relative;
+    width:50%;
+    left:25%;
+    text-align: center;
+    border-color: rgb(209, 208, 208); 
+    border-width: 1px;
+    border-style: dashed;
+}
+
+.allForm.line > label{
+    margin-top: 8px;
+    display:block;
+    text-shadow: 1px 1px rgb(219, 217, 217);
+}
+
+.allForm.line > input{
+    margin-bottom: 8px;
+    display:block;
+    width: 98%;
+    left:1%;
+}
+
+.allForm.line > textarea{
+    width: 98%;
+    left:1%;
+}
+
+@media screen and (max-width: 700px) {
+    .allForm.line > input{
+        width: 100%;
+    }
+    
+    .allForm.line > textarea{
+        width: 100%;
+    }
+
+    .allForm.center > input[type="file"]{
+        width:100%;
+        left:0%;
+    }
+}

@@ -1,0 +1,44 @@
+
+/* Animacion de zumbido */
+@keyframes zumbido {
+    0%   {color: red !important;margin-left: -0.1em;}
+    25%  {color: yellow !important;margin-left: 1em;}
+    50%  {color: blue !important;margin-left: -0.1em;}
+    100% {color: green !important;margin-left: 1em;}
+}
+
+/*Se utiliza para indicar que un input es correcto*/
+.correctInput {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: 2px solid green !important;
+    border-radius: 4px !important;
+    background-color: rgb(209, 238, 209) !important;
+}
+
+
+/*Se utiliza para indicar que un input es incorrecto*/
+.incorrectInput {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: 2px solid red !important;
+    border-radius: 2px !important;
+    background-color: rgb(209, 166, 166) !important;
+    animation-name: zumbido !important;
+    animation-duration: 500ms !important;
+}
+
+/*Se utiliza para indicar que un input esta sin comprobar*/
+.normalInput {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: 1px solid black !important;
+    border-radius: 3px !important;
+    background-color: white !important;
+}
+
+form.space input{
+    margin: 2px;
+}
+
+

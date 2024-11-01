@@ -1,0 +1,17 @@
+<div class="modal wp adapter up1" id="mAddMulti6" onclick="desactivarModal('mAddMulti6')">
+    <div class="noscrollx" onclick="cancelClose()">
+        <form id="multi6" class="allForm line center border">
+            <Label for="name">Titulo:</Label>
+            <input type="text" name="name" id="name" placeholder="Titulo del enlace" required>
+            <Label for="url">Enlace:</Label>
+            <input type="url" name="url" id="url" placeholder="example: https://allcode.es" required>
+            <input type="hidden" name="type" id="type" value="6">
+            <input type="hidden" name="action" id="action" value="uploadurl">
+        </form>
+        <div class="tkwp_botones center">
+            <button class="info" id="aceptarMulti6" onclick="addElementoMultimedia('multi6','aceptarMulti6')">Aceptar</button>
+            <button class="danger" onclick="desactivarModal('mAddMulti6')">Cancelar</button>
+        </div>
+        <button class="buttonClose" onclick="desactivarModal('mAddMulti6')">X</button>
+    </div>
+</div> 

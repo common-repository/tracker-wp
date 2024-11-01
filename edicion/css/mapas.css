@@ -1,0 +1,17 @@
+#map {
+  max-width: 99%;
+  max-height: 80%;
+  width: 100%;
+  height: 80vh;
+}
+
+.mapAlign{
+  display: flex;
+  justify-content: center;
+}
+
+.mapClient {
+  height: 45vh;
+  width: 100%;
+  background-color: brown;
+}

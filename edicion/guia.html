@@ -1,0 +1,37 @@
+<div class="wrap" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <h1>Guia y consejos</h1>
+    <h2>Agregar Keys:</h2>
+    <p>Desde la pantalla de configuracion (<b>Tracker WP > Configuracion</b>) en la seccion de Api Key escriba el api key y dale a guardar.</p>
+    <h2>Crear un mapa nuevo</h2>
+    <p>Desde el gestor de mapa (<b>Tracker WP > Gestor de mapas</b>) presione el boton de "<b>Agregar mapa</b>" escriba el nombre que desea que tenga el mapa y presiona "<b>Crear mapa</b>", sera dirigido a la pantalla de edicion de ese mapa.</p>
+    <h2>Agregar Posiciones:</h2>
+    <p>Primero de todo vaya al Gestor de mapas (<b>Tracker WP > Gestor de mapas</b>) y presiona sobre el nombre del mapa que quiere agregar una posicion, se encontrara en la pagina de edicion de mapa en este momento presione sobre el boton de "<b>agregar posicion</b>" o sobre el mapa en la posicion deseada, aqui dentro podra definir tanto el nombre, descripcion, latitud, longitud y finalmente su ruta. Cuando haya finalizado de completar los datos pulse "<b>crear posicion</b>" si todo va correctamente ya tendra su posicion creada y podra visualizarla en pantalla.</p>
+    <h2>Agregar Rutas:</h2>
+    <p>Siguiendo los pasos anteriores de <b>Agregar Posiciones</b> en el campo de Ruta en la creacion de la posicion, si define este campo con el mismo valor en dos posiciones o mas creara una ruta y sera visualizada por pantalla, si lo deja vacio no estara asignado a ninguna ruta.</p>
+    <h2>Agregar un mapa a una publicacion o pagina:</h2>
+    <p>En la pantalla de Gestor de mapas (<b>Tracker WP > Gestor de mapas</b>) puedes ver todos los mapas que tienes guardados presiona sobre la columna de shortcode del mapa que estes interesado, esta accion copiara el mapa en tu portapapeles, unicamente luego tendras que ir a la publicacion o pagina y pegar este shortcode donde quiera ponerlo.</p>
+
+    <h2>Formato de rutas:</h2>
+    <p>Para importar sus rutas y posiciones puede emplear dos formatos <b>.csv</b> y <b>.json</b>, en este apartado te
+        vamos a dar ejemplos del formato que deben tener.</p>
+    <h4>Formato .CSV</h4>
+    <p>1. <span style="color:red;">Importante:</span> enviar el archivo terminado en "<b>.csv</b>".</p>
+    <p>2. <span style="color:orange;">Aviso:</span> el nombre de la ruta sera el mismo que el del archivo.</p>
+    <code style="background-color:  rgb(236, 209, 209);display:inline-block;">
+        Ayuntamiento mutxamel, Ayuntamiento de mutxamiel situado cerca del parque municipal,38.4173238,-0.4437074,	mutxamel<br>
+        Parque Municipal, Parque municipal con sorprendentes cascadas y vegetacion,	38.4168928,	-0.4420272,	mutxamel
+        
+    </code>
+    <h4>Formato .JSON</h4>
+    <p>1. <span style="color:red;">Importante:</span> enviar el archivo terminado en "<b>.json</b>".</p>
+    <code style="background-color: rgb(236, 209, 209);display:inline-block;">
+    [<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;{"nombre": "spain","latitud": "10","longitud":"10","descripcion": "des","ruta":""},<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;{"nombre": "nom2","latitud": "102","longitud":"102","descripcion": "des2","ruta":""}<br>
+    ]
+    </code>
+    <br />
+    <h3>Soporte:</h3>
+    Para cualquier duda o problema que tengas contacta con nosotros por este correo electronico: <a
+        href="mailto:support@allcode.es">support@allcode.es</a>
+</div>

@@ -1,0 +1,18 @@
+<div class="modal wp adapter up1" id="mAddMulti2" onclick="desactivarModal('mAddMulti2')">
+    <div class="noscrollx" onclick="cancelClose()">
+        <form class="allForm line center border" id="multi2">
+            <Label for="name">Titulo:</Label>
+            <input type="text" name="name" id="name" placeholder="Titulo del video">
+            <Label for="file">Video:</Label>
+            <input type="file" name="file" id="file" accept="video/*" placeholder="Seleccione video">
+            <input type="hidden" name="type" id="type" value="2">
+            <input type="hidden" name="action" id="action" value="uploadvideo">
+        </form>
+        <p><span style="color:red;">Cuidado:</span> Cuando pulse aceptar este video pasara a estar <b>disponible</b> para los usuarios que puedan visualizar el mapa.</p>
+        <div class="tkwp_botones center">
+            <button class="info" id="aceptarMulti2" onclick="addElementoMultimedia('multi2','aceptarMulti2')">Aceptar</button>
+            <button class="danger" onclick="desactivarModal('mAddMulti2')">Cancelar</button>
+        </div>
+        <button class="buttonClose" onclick="desactivarModal('mAddMulti2')">Close</button>
+    </div>
+</div>

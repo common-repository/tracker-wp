@@ -1,0 +1,21 @@
+<div class="modal wp adapter up1" id="mAddMulti1" onclick="desactivarModal('mAddMulti1')">
+    <div class="noscrollx" onclick="cancelClose()">
+        <form class="allForm line center border" id="multi1">
+            <Label for="name">Titulo:</Label>
+            <input type="text" name="name" id="name" placeholder="Titulo de la foto">
+            <Label for="file">Foto:</Label>
+            <input type="file" name="file" id="file" accept="image/*" placeholder="Seleccione la foto">
+            <input type="hidden" name="type" id="type" value="1">
+            <input type="hidden" name="action" id="action" value="uploadphoto">
+        </form>
+        <!--<div style="display:block;height: auto;width: 100%;">
+            <img id="photo" style="min-width:10%;min-height:10%;" src="#" alt="Imagen que se va a subir">
+        </div>-->
+        <p><span style="color:red;">Cuidado:</span> Cuando pulse aceptar esta imagen pasara a estar <b>disponible</b> para los usuarios que puedan visualizar el mapa.</p>
+        <div class="tkwp_botones center">
+            <button class="info" id="aceptarMulti1" onclick="addElementoMultimedia('multi1','aceptarMulti1')">Aceptar</button>
+            <button class="danger" onclick="desactivarModal('mAddMulti1')">Cancelar</button>
+        </div>
+        <button class="buttonClose" onclick="desactivarModal('mAddMulti1')">X</button>
+    </div>
+</div>

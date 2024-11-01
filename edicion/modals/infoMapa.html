@@ -1,0 +1,19 @@
+<div class="modal adapter" id="infoMapa" onclick="desactivarModal('infoMapa')">
+    <div onclick="cancelClose()">
+        <div class="content">
+        <button class="buttonClose" onclick="desactivarModal('infoMapa')">Close</button>
+        <h1>Introduce la informacion del Nuevo Mapa:</h1>
+        <label for="nameMap">Nombre del Mapa:</label>
+        <form id="formu1" style="display:flex;justify-content: left;">
+            <input type="text" name="nameMap" id="nameMap" placeholder="Nombre del mapa">
+            <input type="hidden" name="action" id="action" value="createmap">
+        </div>
+        <div class="footer">
+            <div class="tkwp_botones center">
+                <button class="ok x" id="crearmapa" onclick="cargandoPost('formu1','crearmapa',redireccionarRe,errorJson)">Crear Mapa</button>
+                <button class="danger x" onclick="desactivarModal('infoMapa')">Cancelar</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>

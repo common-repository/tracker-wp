@@ -1,0 +1,18 @@
+<div class="modal wp adapter up1" id="mAddMulti4" onclick="desactivarModal('mAddMulti4')">
+    <div class="noscrollx" onclick="cancelClose()">
+        <form class="allForm line center border" id="multi4">
+            <Label for="name">Titulo:</Label>
+            <input type="text" name="name" id="name" placeholder="Titulo del archivo">
+            <Label for="file">Archivo:</Label>
+            <input type="file" name="file" id="file" accept=".doc,.txt,.pdf" placeholder="Seleccione archivo">
+            <input type="hidden" name="type" id="type" value="4">
+            <input type="hidden" name="action" id="action" value="uploadfile">
+        </form>
+        <p><span style="color:red;">Cuidado:</span> Cuando pulse aceptar este archivo pasara a estar <b>disponible</b> para los usuarios que puedan visualizar el mapa.</p>
+        <div class="tkwp_botones center">
+            <button class="info" id="aceptarMulti4" onclick="addElementoMultimedia('multi4','aceptarMulti4')">Aceptar</button>
+            <button class="danger" onclick="desactivarModal('mAddMulti4')">Cancelar</button>
+        </div>
+        <button class="buttonClose" onclick="desactivarModal('mAddMulti4')">Close</button>
+    </div>
+</div>

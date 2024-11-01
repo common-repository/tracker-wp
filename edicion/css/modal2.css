@@ -1,0 +1,90 @@
+/**/
+.modal{
+    width: 100%;
+    height: 100%;
+    z-index:9999;
+    background: rgba(97, 110, 98, 0.424);
+    position: absolute;
+    left: -20px;
+    padding-right: 20px;
+    top: 0px;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active{
+    display: flex; 
+}
+
+.modal.desactive{
+    display: none; 
+}
+
+.modal > div{
+    padding-right: 1em;
+    padding-left: 1em;
+    height: 80%;
+    width: 80%;
+    background-color:white;
+    border-color: darkblue;
+    border-style: solid;
+	border-width: 1px;
+    border-radius: 1em;
+    overflow: auto;
+}
+
+.hori{
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+}
+
+.der{
+    background-color:blueviolet ;
+    float: right;
+    height: 100%;
+    width: 100%;
+}
+
+.izq{
+    float: left;
+    height: 100%;
+    width: 100%;
+	background-color:red ;
+}
+
+.buttonClose{
+	position: fixed;
+	float:right;
+	text-decoration:none;
+	border-width:0px;
+	border-radius:2em; 
+}
+
+.buttonClose:hover{
+	border-color: rgb(255, 0, 0);
+	border-width:2px;
+}
+
+@media screen and (max-width: 600px) {
+	.modal > div{
+	    height: 100%;
+		width: 100%;
+		border-radius: 1px;	
+		height: 99%;
+		width: 100%;
+	}
+	.hori{
+		flex-direction: column;
+	}
+	.modal{
+		justify-content: none;
+		align-items: none;
+		left: 0;
+	}
+	.buttonClose{
+		padding:20px;
+	}
+}

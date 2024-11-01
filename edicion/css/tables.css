@@ -1,0 +1,209 @@
+/*
+Botones sueltos
+*/
+button.tkwp_button{
+    background-color: rgb(233, 71, 22);
+    color:white;
+	border-radius: 5px;
+    text-decoration: none;
+	margin-left: 8px;
+    margin-right: 8px;
+    font-size: 60%;/*Del elemento padre*/
+}
+
+button.tkwp_button:hover{
+    transform: scale(1.2, 1.2);
+}
+
+button.tkwp_button:active{
+    /*transform: rotateZ(20deg);*/
+    transform: scale(0.8,0.8);
+}
+
+.tkwp_button.danger{
+    background-color: rgb(233, 71, 22);
+    color:white;
+}
+
+.tkwp_button.ok{
+    background-color: rgba(75, 200, 17, 0.959);
+    color:white;
+}
+
+.tkwp_button.info{
+    background-color: rgba(17, 133, 200, 0.959);
+    color:white;
+}
+
+/*Fin botones sueltos*/
+
+
+.tkwp_tabla{
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/*Crea un scroll lateral si sobrepasa el tamaño del max-height*/
+.tkwp_tabla.adapter{
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 70vh;
+}
+.tkwp_botones{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: black;
+    border-width: 0;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.tkwp_botones.center{
+    justify-content: center;
+}
+
+.tkwp_botones.end{
+    justify-content: flex-end;
+}
+
+.tkwp_botones.column{
+    flex-direction: column;
+}
+ 
+.tkwp_encabezado{
+    display: flex;
+    justify-content: center;
+    border-bottom: black;
+    border-width: 1px;
+    border-style: none none solid none;
+}
+
+.tkwp_fila{
+    display: flex;
+    justify-content: center;
+    border-bottom: black;
+    border-width: 1px;
+    border-style: none none solid none;
+}
+
+.tkwp_fila:hover{
+    transform: scale(1.1,1.1);
+    border-style:solid solid solid solid ; 
+    overflow: visible;
+}
+
+.tkwp_botones > button{
+    border-radius: 5px;
+    font-size: 11px;
+    text-decoration: none;
+    color:black;
+    background-color: rgb(224, 218, 218);
+    padding: 10px 5px 10px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+.tkwp_botones > button:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.tkwp_botones > button:active{
+    /*transform: rotateZ(20deg);*/
+    transform: scale(0.8,0.8);
+}
+
+
+.tkwp_botones > button.l{
+    padding: 0;
+    font-size: 8px;
+}
+
+.tkwp_botones > button.x{
+    padding: 12px 7px 12px 7px;
+    font-size: 16px;
+}
+
+.tkwp_botones > button.xs{
+    padding: 15px 9px 15px 9px;
+    font-size: 24px;
+}
+
+.tkwp_botones > button.danger{
+    background-color: rgb(233, 71, 22);
+    color:white;
+}
+
+.tkwp_botones > button.ok{
+    background-color: rgba(75, 200, 17, 0.959);
+    color:white;
+}
+
+.tkwp_botones > button.info{
+    background-color: rgba(17, 133, 200, 0.959);
+    color:white;
+}
+
+.tkwp_encabezado > .tkwp_campo{
+    background-color: white;
+    font-weight: bolder;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.tkwp_fila > .tkwp_campo{
+    background-color: white;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.tkwp_fila > .tkwp_campo:hover{ 
+    transform: scale(1.1, 1.1);
+    border-style: ridge;
+    border-width: 1px;
+    border-color:rgb(211, 141, 176);
+}
+
+.tkwp_fila > .tkwp_campo:active{ 
+    transform: scale(0.8, 0.8);
+    border-style: ridge;
+    border-color:hotpink;
+}
+
+.row2 .tkwp_campo{
+    flex-basis:50%; 
+}
+.row3 .tkwp_campo{
+    flex-basis:33%; 
+}
+.row4 .tkwp_campo{
+    flex-basis:25%; 
+}
+.row5 .tkwp_campo{
+    flex-basis:20%; 
+}
+.row6 .tkwp_campo{
+    flex-basis:16.66%; 
+}
+
+
+@media screen and (max-width: 600px) {
+    .tkwp_encabezado{
+        flex-direction: column;
+    }
+
+    .tkwp_fila{
+        flex-direction: column;
+    }
+
+    .tkwp_botones{
+        justify-content: center;
+    }
+}

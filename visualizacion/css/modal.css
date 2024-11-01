@@ -1,0 +1,28 @@
+.tkwp_multi{
+    max-width: 100%;
+}
+
+.tkwp_multi > img {
+    max-width: 100%;
+    display: block;
+}
+
+.tkwp_multi > video {
+    max-width: 100%;
+    display: block;
+}
+
+.tkwp_multi > audio {
+    max-width: 100%;
+    display: block;
+}
+
+.tkwp_multi > p {
+    max-width: 100%;
+    display: block;
+}
+
+.tkwp_multi > button {
+    position: relative;
+    bottom: 1px;
+}

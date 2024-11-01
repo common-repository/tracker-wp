@@ -1,0 +1,17 @@
+<div class="modal wp adapter up1" id="mAddMulti5" onclick="desactivarModal('mAddMulti5')">
+    <div class="noscrollx" onclick="cancelClose()">
+        <form id="multi5" class="allForm line center border">
+            <Label for="name">Titulo:</Label>
+            <input type="text" name="name" id="name" placeholder="Titulo del texto">
+            <Label for="info">Texto:</Label>
+            <textarea name="info" id="info" placeholder="Escribe la informacion adicional"></textarea>
+            <input type="hidden" name="type" id="type" value="5">
+            <input type="hidden" name="action" id="action" value="uploadtext">
+        </form>
+        <div class="tkwp_botones center">
+            <button class="info" id="aceptarMulti5" onclick="addElementoMultimedia('multi5','aceptarMulti5')">Aceptar</button>
+            <button class="danger" onclick="desactivarModal('mAddMulti5')">Cancelar</button>
+        </div>
+        <button class="buttonClose" onclick="desactivarModal('mAddMulti5')">X</button>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="modal wp adapter up1" id="mAddMulti3" onclick="desactivarModal('mAddMulti3')">
+    <div class="noscrollx" onclick="cancelClose()">
+        <form class="allForm line center border" id="multi3">
+            <Label for="name">Titulo:</Label>
+            <input type="text" name="name" id="name" placeholder="Titulo de la musica">
+            <Label for="file">Musica:</Label>
+            <input type="file" name="file" id="file" data-show-upload="false" accept="audio/*" placeholder="Seleccione la musica">
+            <input type="hidden" name="type" id="type" value="3">
+            <input type="hidden" name="action" id="action" value="uploadmusica">
+        </form>
+        <p><span style="color:red;">Cuidado:</span> Cuando pulse aceptar esta musica pasara a estar <b>disponible</b> para los usuarios que puedan visualizar el mapa.</p>
+        <div class="tkwp_botones center">
+            <button class="info" id="aceptarMulti3" onclick="addElementoMultimedia('multi3','aceptarMulti3')">Aceptar</button>
+            <button class="danger" onclick="desactivarModal('mAddMulti3')">Cancelar</button>
+        </div>
+        <button class="buttonClose" onclick="desactivarModal('mAddMulti3')">X</button>
+    </div>
+</div>
